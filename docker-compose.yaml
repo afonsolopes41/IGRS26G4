@@ -1,0 +1,122 @@
+# ConferenceControl 2.0 — IGRS 2026/27 Grupo 4
+# Baseado nos compose do Laboratório 5 (proxy-tm-rr-var + sems).
+# Imagens necessárias (construídas nos labs): kamailio:igrs_2026, sems:igrs_2026, twinkle:igrs_2026
+
+services:
+  kamailio:
+    image: kamailio:igrs_2026
+    container_name: kamailio
+    hostname: acme.operador
+    environment:
+      - SIP_DOMAIN=acme.operador
+      - WITH_DB=no
+    volumes:
+      - ./src/kamailio/kamailio.cfg:/etc/kamailio/kamailio.cfg:ro
+      - ./src/kamailio/app.py:/etc/kamailio/app.py:ro
+      - ./src/kamailio/aux_classes.py:/etc/kamailio/aux_classes.py:ro
+    networks:
+      sipnet:
+        aliases:
+          - acme.operador
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: sipnet.redis
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+    networks:
+      - sipnet
+    restart: unless-stopped
+
+  sems:
+    image: sems:igrs_2026
+    container_name: sems
+    hostname: sipnet.sems
+    volumes:
+      - ./config/sems.conf:/sems/sems.conf:ro
+    networks:
+      - sipnet
+    restart: unless-stopped
+
+  # --- Terminais Twinkle ---
+  # leader = team leader; maria e joao = colaboradores; manel = utilizador externo (outro.operador)
+  terminal_leader:
+    image: twinkle:igrs_2026
+    container_name: terminal_leader
+    hostname: terminal.leader
+    volumes:
+      - ./config/terminais/Leader.cfg:/tmp/twinkle/Leader.cfg:ro
+      - ./config/terminais/twinkle_leader.sys:/tmp/twinkle/twinkle.sys:ro
+      - ./scripts_aux/.asoundrc:/root/.asoundrc:ro
+      - ./scripts_aux/start.sh:/root/start.sh:ro
+      - twinkle-leader:/root/.twinkle
+    environment:
+      - DISPLAY=host.docker.internal:0
+    entrypoint: ["sh", "/root/start.sh"]
+    networks:
+      - sipnet
+    restart: unless-stopped
+
+  terminal_maria:
+    image: twinkle:igrs_2026
+    container_name: terminal_maria
+    hostname: terminal.maria
+    volumes:
+      - ./config/terminais/Maria.cfg:/tmp/twinkle/Maria.cfg:ro
+      - ./config/terminais/twinkle_maria.sys:/tmp/twinkle/twinkle.sys:ro
+      - ./scripts_aux/.asoundrc:/root/.asoundrc:ro
+      - ./scripts_aux/start.sh:/root/start.sh:ro
+      - twinkle-maria:/root/.twinkle
+    environment:
+      - DISPLAY=host.docker.internal:0
+    entrypoint: ["sh", "/root/start.sh"]
+    networks:
+      - sipnet
+    restart: unless-stopped
+
+  terminal_joao:
+    image: twinkle:igrs_2026
+    container_name: terminal_joao
+    hostname: terminal.joao
+    volumes:
+      - ./config/terminais/Joao.cfg:/tmp/twinkle/Joao.cfg:ro
+      - ./config/terminais/twinkle_joao.sys:/tmp/twinkle/twinkle.sys:ro
+      - ./scripts_aux/.asoundrc:/root/.asoundrc:ro
+      - ./scripts_aux/start.sh:/root/start.sh:ro
+      - twinkle-joao:/root/.twinkle
+    environment:
+      - DISPLAY=host.docker.internal:0
+    entrypoint: ["sh", "/root/start.sh"]
+    networks:
+      - sipnet
+    restart: unless-stopped
+
+  terminal_manel:
+    image: twinkle:igrs_2026
+    container_name: terminal_manel
+    hostname: terminal.manel
+    volumes:
+      - ./config/terminais/Manel.cfg:/tmp/twinkle/Manel.cfg:ro
+      - ./config/terminais/twinkle_manel.sys:/tmp/twinkle/twinkle.sys:ro
+      - ./scripts_aux/.asoundrc:/root/.asoundrc:ro
+      - ./scripts_aux/start.sh:/root/start.sh:ro
+      - twinkle-manel:/root/.twinkle
+    environment:
+      - DISPLAY=host.docker.internal:0
+    entrypoint: ["sh", "/root/start.sh"]
+    networks:
+      - sipnet
+    restart: unless-stopped
+
+networks:
+  sipnet:
+    driver: bridge
+
+volumes:
+  redis_data:
+  twinkle-leader:
+  twinkle-maria:
+  twinkle-joao:
+  twinkle-manel:
