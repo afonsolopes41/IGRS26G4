@@ -61,11 +61,16 @@ class kamailio:
         reply(404, "Not Here")
         return 1
 
-    # --- REGISTER: US1 (Rafael Reis) e US2 (Afonso) ---
+   # --- REGISTER: US1 (Rafael Reis) e US2 (Afonso) ---
     def route_register(self, msg):
-        # US1: rejeitar domínios externos (a implementar)
+        # US1: Rejeitar domínios que não sejam acme.operador
+        domain = pv("$rd")
+        if not is_acme(domain):
+            reply(403, "Forbidden")
+            return 1
+
         # US2: registo/deregisto com 404 (a implementar)
-        KSR.registrar.save("location", 0)   # versão básica, para os colegas já poderem testar
+        KSR.registrar.save("location", 0)   
         return 1
 
     # --- INVITE: US3, US5, US6, US7, US8, US9 ---
