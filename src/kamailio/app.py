@@ -51,7 +51,7 @@ class kamailio:
 
     # --- Pedidos dentro de um diálogo ---
     def route_in_dialog(self, msg):
-        if KSR.rr.loose_route() > 0:
+        if KSR.rr.loose_route() > 0: # Cenário de Encerramento
             KSR.tm.t_relay()
             return 1
         if msg.Method == "ACK":
@@ -76,10 +76,10 @@ class kamailio:
     # --- INVITE: US3, US5, US6, US7, US8, US9 ---
     def route_invite(self, msg):
         # US5/US7: pedidos para common@ e team@ (a implementar, com forward_to_conference)
-        if KSR.registrar.lookup("location") < 0:
+        if KSR.registrar.lookup("location") < 0: # Cenário do Utilizador Não Registado
             reply(404, "Not Found")
             return 1
-        KSR.rr.record_route()
+        KSR.rr.record_route() # Cenário de Chamada Bem-Sucedida
         KSR.tm.t_relay()
         return 1
 
