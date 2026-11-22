@@ -1,0 +1,283 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="SBbOrkuZK_IYgFS3DJsN">
+    <mxGraphModel dx="1609" dy="2147" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="user:Maria" vertex="1">
+          <mxGeometry height="60" width="120" x="50" y="-560" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="server:Kamailio" vertex="1">
+          <mxGeometry height="60" width="120" x="430" y="-560" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-3" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.437;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;" target="zVZKjrHNgS_bX9oL2MQc-1" value="">
+          <mxGeometry height="50" relative="1" width="50" x="0.2808" as="geometry">
+            <Array as="points">
+              <mxPoint x="102.44" y="-440" />
+            </Array>
+            <mxPoint x="102.44" y="-320" as="sourcePoint" />
+            <mxPoint x="370" y="-350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-4" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="zVZKjrHNgS_bX9oL2MQc-2" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.1238" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="-320" />
+            </Array>
+            <mxPoint x="490" y="-350" as="sourcePoint" />
+            <mxPoint x="490" y="-350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" x="0.6697" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="-460" />
+            </Array>
+            <mxPoint x="100" y="-460" as="sourcePoint" />
+            <mxPoint x="490" y="-460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-6" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="-430" as="sourcePoint" />
+            <mxPoint x="100" y="-430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-7" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="100" y="-400" as="sourcePoint" />
+            <mxPoint x="490" y="-400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-8" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="-370" as="sourcePoint" />
+            <mxPoint x="100" y="-370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="100" y="-330" as="sourcePoint" />
+            <mxPoint x="490" y="-330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F1" vertex="1">
+          <mxGeometry height="30" width="60" x="270" y="-490" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F2" vertex="1">
+          <mxGeometry height="30" width="60" x="270" y="-460" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F3" vertex="1">
+          <mxGeometry height="30" width="60" x="270" y="-430" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F4" vertex="1">
+          <mxGeometry height="30" width="60" x="270" y="-400" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F5" vertex="1">
+          <mxGeometry height="30" width="60" x="270" y="-360" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;pre&gt;&lt;code&gt;Caso não registado:&lt;br&gt;&lt;br&gt;F1: REGISTER sip:acme.operador SIP/2.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.6:5090;branch=z9hG4bKfjesgohf&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=wzuph&lt;br&gt;    To: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;&lt;br&gt;    Contact: &amp;lt;sip:maria@172.20.0.6:5090&amp;gt;;expires=3600&lt;br&gt;    Call-ID: husjykhwryxzykf@terminal.maria&lt;br&gt;&lt;br&gt;F2: SIP/2.0 200 OK&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.6:5090;branch=z9hG4bKfjesgohf&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=wzuph&lt;br&gt;    To: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=d7c5775fc8bf047833cfcbc8dda76893.3bbb8223&lt;br&gt;    Contact: &amp;lt;sip:maria@172.20.0.6:5090&amp;gt;;expires=3600&lt;br&gt;    Call-ID: husjykhwryxzykf@terminal.maria&lt;br&gt;&lt;br&gt;F3: INVITE sip:joao@acme.operador SIP/2.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.6:5090;branch=z9hG4bKtncntsvy&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=rkplb&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;&lt;br&gt;    Contact: &amp;lt;sip:maria@172.20.0.6:5090&amp;gt;&lt;br&gt;    Call-ID: qzhiihupdlndmnn@terminal.maria&lt;br&gt;&lt;br&gt;F4: SIP/2.0 404 Not Found&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.6:5090;branch=z9hG4bKtncntsvy&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=rkplb&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;;tag=d7c5775fc8bf047833cfcbc8dda76893.1b5709d4&lt;br&gt;    Call-ID: qzhiihupdlndmnn@terminal.maria&lt;br&gt;&lt;br&gt;F5: ACK sip:joao@acme.operador SIP/2.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.6:5090;branch=z9hG4bKtncntsvy&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=rkplb&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;;tag=d7c5775fc8bf047833cfcbc8dda76893.1b5709d4&lt;br&gt;    Call-ID: qzhiihupdlndmnn@terminal.maria&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="780" width="433" x="630" y="-800" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="user:Maria" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="-90" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="server:Kamailio" vertex="1">
+          <mxGeometry height="60" width="120" x="414" y="-90" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="user:João" vertex="1">
+          <mxGeometry height="60" width="120" x="786.5" y="-90" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-19" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="zVZKjrHNgS_bX9oL2MQc-16" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="100" y="670" as="sourcePoint" />
+            <mxPoint x="125" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-20" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="zVZKjrHNgS_bX9oL2MQc-17" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="680" as="sourcePoint" />
+            <mxPoint x="499" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-21" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="zVZKjrHNgS_bX9oL2MQc-18" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="846.5" y="670" as="sourcePoint" />
+            <mxPoint x="846.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-23" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="840" as="sourcePoint" />
+            <mxPoint x="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-24" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="40" as="sourcePoint" />
+            <mxPoint x="850" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-25" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="100" y="70" as="sourcePoint" />
+            <mxPoint x="470" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-26" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="110" as="sourcePoint" />
+            <mxPoint x="100" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-27" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="100" y="150" as="sourcePoint" />
+            <mxPoint x="470" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-28" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="200" as="sourcePoint" />
+            <mxPoint x="100" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F1" vertex="1">
+          <mxGeometry height="30" width="60" x="630" y="-30" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F2" vertex="1">
+          <mxGeometry height="30" width="60" x="630" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-31" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="230" as="sourcePoint" />
+            <mxPoint x="850" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-32" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="850" y="270" as="sourcePoint" />
+            <mxPoint x="480" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-33" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="850" y="310" as="sourcePoint" />
+            <mxPoint x="470" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F3" vertex="1">
+          <mxGeometry height="30" width="60" x="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F4" vertex="1">
+          <mxGeometry height="30" width="60" x="250" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F5" vertex="1">
+          <mxGeometry height="30" width="60" x="250" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F6" vertex="1">
+          <mxGeometry height="30" width="60" x="250" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F7" vertex="1">
+          <mxGeometry height="30" width="60" x="630" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F8" vertex="1">
+          <mxGeometry height="30" width="60" x="630" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F9" vertex="1">
+          <mxGeometry height="30" width="60" x="630" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-41" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="340" as="sourcePoint" />
+            <mxPoint x="100" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-42" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="850" y="370" as="sourcePoint" />
+            <mxPoint x="477.00000000000045" y="369.99999999999955" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-43" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F10" vertex="1">
+          <mxGeometry height="30" width="60" x="250" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-44" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F11" vertex="1">
+          <mxGeometry height="30" width="60" x="630" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-45" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="420" as="sourcePoint" />
+            <mxPoint x="100" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-46" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F12" vertex="1">
+          <mxGeometry height="30" width="60" x="250" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-47" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="100" y="470" as="sourcePoint" />
+            <mxPoint x="480" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F13" vertex="1">
+          <mxGeometry height="30" width="60" x="250" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-49" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="500" as="sourcePoint" />
+            <mxPoint x="850" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-50" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="100" y="550" as="sourcePoint" />
+            <mxPoint x="480" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-51" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="570" as="sourcePoint" />
+            <mxPoint x="850" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-52" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F14" vertex="1">
+          <mxGeometry height="30" width="60" x="630" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-54" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F15" vertex="1">
+          <mxGeometry height="30" width="60" x="250" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-55" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F16" vertex="1">
+          <mxGeometry height="30" width="60" x="630" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-56" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="846.4999999999995" y="620.0000000000005" as="sourcePoint" />
+            <mxPoint x="473.5" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-57" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="472.99999999999955" y="650.0000000000005" as="sourcePoint" />
+            <mxPoint x="100" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-58" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F17" vertex="1">
+          <mxGeometry height="30" width="60" x="630" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-59" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="F18" vertex="1">
+          <mxGeometry height="30" width="60" x="250" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-61" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;pre&gt;&lt;code&gt;F1: REGISTER sip:acme.operador SIP/2.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.7:5100;branch=z9hG4bKdqnenujf&lt;br&gt;    From: &quot;Joao&quot; &amp;lt;sip:joao@acme.operador&amp;gt;;tag=abiwg&lt;br&gt;    To: &quot;Joao&quot; &amp;lt;sip:joao@acme.operador&amp;gt;&lt;br&gt;    Contact: &amp;lt;sip:joao@172.20.0.7:5100&amp;gt;;expires=3600&lt;br&gt;    Call-ID: cyqgyvkestoiavi@terminal.joao&lt;br&gt;&lt;br&gt;F2: SIP/2.0 200 OK&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.7:5100;branch=z9hG4bKdqnenujf&lt;br&gt;    From: &quot;Joao&quot; &amp;lt;sip:joao@acme.operador&amp;gt;;tag=abiwg&lt;br&gt;    To: &quot;Joao&quot; &amp;lt;sip:joao@acme.operador&amp;gt;;tag=b4f516ba9065625c22bc328d471b34f4.09a5f709&lt;br&gt;    Contact: &amp;lt;sip:joao@172.20.0.7:5100&amp;gt;;expires=3600&lt;br&gt;    Call-ID: cyqgyvkestoiavi@terminal.joao&lt;br&gt;&lt;pre&gt;&lt;code&gt;F3: REGISTER sip:acme.operador SIP/2.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKyoiwltkq&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=bglqy&lt;br&gt;    To: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;&lt;br&gt;    Contact: &amp;lt;sip:maria@172.20.0.2:5090&amp;gt;;expires=3600&lt;br&gt;    Call-ID: wuhoeugtslxvklx@terminal.maria&lt;br&gt;&lt;br&gt;F4: SIP/2.0 200 OK&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKyoiwltkq&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=bglqy&lt;br&gt;    To: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=b4f516ba9065625c22bc328d471b34f4.52afdc35&lt;br&gt;    Contact: &amp;lt;sip:maria@172.20.0.2:5090&amp;gt;;expires=3600&lt;br&gt;    Call-ID: wuhoeugtslxvklx@terminal.maria&lt;br&gt;&lt;pre&gt;&lt;code&gt;F5: INVITE sip:joao@acme.operador SIP/2.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKwujufegv&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=nncyf&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;&lt;br&gt;    Contact: &amp;lt;sip:maria@172.20.0.2:5090&amp;gt;&lt;br&gt;    Call-ID: xpmeeqamjszgomu@terminal.maria&lt;br&gt;&lt;br&gt;F6: SIP/2.0 100 trying -- your call is important to us&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKwujufegv&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=nncyf&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;&lt;br&gt;    Call-ID: xpmeeqamjszgomu@terminal.maria&lt;br&gt;&lt;br&gt;F7: INVITE sip:joao@172.20.0.7:5100 SIP/2.0&lt;br&gt;    Record-Route: &amp;lt;sip:172.20.0.3;lr;ftag=nncyf&amp;gt;&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.3;branch=z9hG4bK61fc.70c37af023f06d29a72ef3e8b4bcd684.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKwujufegv&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=nncyf&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;&lt;br&gt;    Contact: &amp;lt;sip:maria@172.20.0.2:5090&amp;gt;&lt;br&gt;    Call-ID: xpmeeqamjszgomu@terminal.maria&lt;br&gt;&lt;br&gt;F8: SIP/2.0 100 Trying&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.3;branch=z9hG4bK61fc.70c37af023f06d29a72ef3e8b4bcd684.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKwujufegv&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=nncyf&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;&lt;br&gt;    Call-ID: xpmeeqamjszgomu@terminal.maria&lt;br&gt;&lt;br&gt;F9: SIP/2.0 180 Ringing&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.3;branch=z9hG4bK61fc.70c37af023f06d29a72ef3e8b4bcd684.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKwujufegv&lt;br&gt;    Record-Route: &amp;lt;sip:172.20.0.3;lr;ftag=nncyf&amp;gt;&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=nncyf&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;;tag=bvasb&lt;br&gt;    Contact: &amp;lt;sip:joao@172.20.0.7:5100&amp;gt;&lt;br&gt;    Call-ID: xpmeeqamjszgomu@terminal.maria&lt;/code&gt;&lt;/pre&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="2280" width="1000" x="960" y="-740" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-62" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;pre&gt;&lt;code&gt;F10: SIP/2.0 180 Ringing&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKwujufegv&lt;br&gt;    Record-Route: &amp;lt;sip:172.20.0.3;lr;ftag=nncyf&amp;gt;&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=nncyf&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;;tag=bvasb&lt;br&gt;    Contact: &amp;lt;sip:joao@172.20.0.7:5100&amp;gt;&lt;br&gt;    Call-ID: xpmeeqamjszgomu@terminal.maria&lt;br&gt;&lt;br&gt;F11: SIP/2.0 200 OK&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.3;branch=z9hG4bK61fc.70c37af023f06d29a72ef3e8b4bcd684.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKwujufegv&lt;br&gt;    Record-Route: &amp;lt;sip:172.20.0.3;lr;ftag=nncyf&amp;gt;&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=nncyf&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;;tag=bvasb&lt;br&gt;    Contact: &amp;lt;sip:joao@172.20.0.7:5100&amp;gt;&lt;br&gt;    Call-ID: xpmeeqamjszgomu@terminal.maria&lt;br&gt;&lt;br&gt;F12: SIP/2.0 200 OK&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKwujufegv&lt;br&gt;    Record-Route: &amp;lt;sip:172.20.0.3;lr;ftag=nncyf&amp;gt;&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=nncyf&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;;tag=bvasb&lt;br&gt;    Contact: &amp;lt;sip:joao@172.20.0.7:5100&amp;gt;&lt;br&gt;    Call-ID: xpmeeqamjszgomu@terminal.maria&lt;br&gt;&lt;br&gt;F13: ACK sip:joao@172.20.0.7:5100 SIP/2.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKsnkztazi&lt;br&gt;    Route: &amp;lt;sip:172.20.0.3;lr;ftag=nncyf&amp;gt;&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=nncyf&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;;tag=bvasb&lt;br&gt;    Call-ID: xpmeeqamjszgomu@terminal.maria&lt;br&gt;&lt;br&gt;F14: ACK sip:joao@172.20.0.7:5100 SIP/2.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.3;branch=z9hG4bK61fc.82e0ed4bc071c19e1a3231d63fee7f64.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKsnkztazi&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=nncyf&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;;tag=bvasb&lt;br&gt;    Call-ID: xpmeeqamjszgomu@terminal.maria&lt;br&gt;&lt;br&gt;F15: BYE sip:joao@172.20.0.7:5100 SIP/2.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKksgzdfvf&lt;br&gt;    Route: &amp;lt;sip:172.20.0.3;lr;ftag=nncyf&amp;gt;&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=nncyf&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;;tag=bvasb&lt;br&gt;    Call-ID: xpmeeqamjszgomu@terminal.maria&lt;br&gt;&lt;br&gt;F16: BYE sip:joao@172.20.0.7:5100 SIP/2.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.3;branch=z9hG4bK51fc.aa00312b5d3498d9c19dc0bade46648e.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKksgzdfvf&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=nncyf&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;;tag=bvasb&lt;br&gt;    Call-ID: xpmeeqamjszgomu@terminal.maria&lt;br&gt;&lt;br&gt;F17: SIP/2.0 200 OK&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.3;branch=z9hG4bK51fc.aa00312b5d3498d9c19dc0bade46648e.0&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKksgzdfvf&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=nncyf&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;;tag=bvasb&lt;br&gt;    Call-ID: xpmeeqamjszgomu@terminal.maria&lt;br&gt;&lt;br&gt;F18: SIP/2.0 200 OK&lt;br&gt;    Via: SIP/2.0/UDP 172.20.0.2:5090;branch=z9hG4bKksgzdfvf&lt;br&gt;    From: &quot;Maria&quot; &amp;lt;sip:maria@acme.operador&amp;gt;;tag=nncyf&lt;br&gt;    To: &amp;lt;sip:joao@acme.operador&amp;gt;;tag=bvasb&lt;br&gt;    Call-ID: xpmeeqamjszgomu@terminal.maria&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="1800" width="520" x="1610" y="-500" as="geometry" />
+        </mxCell>
+        <mxCell id="zVZKjrHNgS_bX9oL2MQc-63" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Caso registado +BYE" vertex="1">
+          <mxGeometry height="30" width="160" x="980" y="-140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
