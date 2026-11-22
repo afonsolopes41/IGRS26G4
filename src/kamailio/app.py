@@ -31,6 +31,12 @@ class kamailio:
             reply(483, "Too Many Hops")
             return 1
 
+        # --- US6: Bloquear utilizadores/domínios externos ---
+        if msg.Method != "ACK" and not is_acme(pv("$fd")):
+            KSR.info("US6: bloqueado %s de %s\n" % (msg.Method, pv("$fu")))
+            reply(403, "Forbidden")
+            return 1
+
         # Pedidos dentro de um diálogo (BYE, ACK, re-INVITE)
         if KSR.siputils.has_totag() > 0:
             return self.route_in_dialog(msg)
@@ -113,8 +119,8 @@ def pv(name):
 
 
 def is_acme(domain):
-    """True se o domínio for o do operador ACME."""
-    return domain == DOMAIN
+    """True se o domínio for o do operador ACME. (sem distinguir maiúsculas)"""
+    return domain.lower() == DOMAIN
 
 
 def reply(code, reason):
