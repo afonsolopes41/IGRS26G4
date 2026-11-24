@@ -86,13 +86,14 @@ class kamailio:
     # --- MESSAGE: US4 (PIN) e US10 (# / * do leader) ---
     def route_message(self, msg):
         # US4: validar@ (a implementar)
-        if (pv("$rb").strip() != "0000" or not is_acme(pv("$fd"))):
-            reply(403, "Forbidden")
-            return 1
-        else:
-            KSR.pv.sets("$sht(valid=>$fu)", "1")
-            reply(200, "OK")
-            return 1
+        if(pv("$rU") == "validar" and is_acme(pv("$rd"))):
+            if (pv("$rb").strip() != "0000" or not is_acme(pv("$fd"))):
+                reply(403, "Forbidden")
+                return 1
+            else:
+                KSR.pv.sets("$sht(valid=>$fu)", "1")
+                reply(200, "OK")
+                return 1
         # US10: resposta do leader (a implementar)
         if KSR.registrar.lookup("location") < 0:
             reply(404, "Not Found")
