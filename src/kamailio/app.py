@@ -9,7 +9,7 @@ from aux_classes import RedisDB   # do Lab 5: persistência em Redis (US14)
 # --- Constantes (confirmar com o professor) ---
 DOMAIN = os.getenv("SIP_DOMAIN") or "acme.operador"
 LEADER_AOR = "sip:leader@acme.operador"      # AoR do team leader
-CONF_HOST = "sems:5050"                       # servidor de conferências SEMS (Lab 5)
+CONF_HOST = "sems:5050"                      # servidor de conferências SEMS (Lab 5)
 
 
 def mod_init():
@@ -92,6 +92,14 @@ class kamailio:
     # --- MESSAGE: US4 (PIN) e US10 (# / * do leader) ---
     def route_message(self, msg):
         # US4: validar@ (a implementar)
+        if(pv("$rU") == "validar" and is_acme(pv("$rd"))):
+            if (pv("$rb").strip() != "0000" or not is_acme(pv("$fd"))):
+                reply(403, "Forbidden")
+                return 1
+            else:
+                KSR.pv.sets("$sht(valid=>$fu)", "1")
+                reply(200, "OK")
+                return 1
         # US10: resposta do leader (a implementar)
         if KSR.registrar.lookup("location") < 0:
             reply(404, "Not Found")
