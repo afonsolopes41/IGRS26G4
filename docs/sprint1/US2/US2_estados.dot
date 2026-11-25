@@ -1,0 +1,14 @@
+digraph US2 {
+  rankdir=LR; nodesep=0.8; ranksep=1.6;
+  node [fontname="Helvetica", fontsize=12];
+  edge [fontname="Helvetica", fontsize=11];
+  ini [shape=point, width=0.18];
+  NR [shape=box, style="rounded,filled", fillcolor="#f0efec", label="Não registado"];
+  R  [shape=box, style="rounded,filled", fillcolor="#e7f1fb", label="Registado\n(maria@acme.operador em usrloc)"];
+  ini -> NR;
+  NR -> R  [label="REGISTER expires>0\n/ 200 OK"];
+  R  -> R  [label="REGISTER expires>0 (refresh)\n/ 200 OK"];
+  R  -> NR [label="REGISTER expires=0\n/ 200 OK"];
+  R  -> NR [label="fim do Expires (3600 s)", style=dashed];
+  NR -> NR [label="REGISTER expires=0\n/ 404 Not Found", color="#c0392b", fontcolor="#c0392b"];
+}
