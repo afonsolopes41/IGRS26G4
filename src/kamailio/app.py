@@ -3,6 +3,7 @@
 # Cada user story acrescenta código na rota do seu método SIP.
 
 import os
+import re
 import KSR as KSR
 from aux_classes import RedisDB   # do Lab 5: persistência em Redis (US14)
 
@@ -75,8 +76,16 @@ class kamailio:
             reply(403, "Forbidden")
             return 1
 
-        # US2: registo/deregisto com 404 (a implementar)
-        KSR.registrar.save("location", 0)   
+        # US2: registo e deregisto de utilizadores acme.operador
+        # Deregisto (Expires 0) de quem não está registado -> 404 Not Found
+        if is_deregister() and KSR.registrar.registered_uri("location", pv("$tu")) < 0:
+            KSR.info("US2: deregisto de %s sem registo -> 404\n" % pv("$tu"))
+            reply(404, "Not Found")
+            return 1
+
+        # Registo, refresh ou deregisto válido: o registrar atualiza a base de
+        # dados de registos (usrloc) e responde 200 OK
+        KSR.registrar.save("location", 0)
         return 1
 
     # --- INVITE: US3, US5, US6, US7, US8, US9 ---
@@ -129,6 +138,13 @@ def pv(name):
 def is_acme(domain):
     """True se o domínio for o do operador ACME. (sem distinguir maiúsculas)"""
     return domain.lower() == DOMAIN
+
+
+def is_deregister():
+    """True se o REGISTER for um deregisto: Expires: 0, Contact: * ou ;expires=0 no Contact."""
+    expires = pv("$hdr(Expires)").strip()
+    contact = pv("$hdr(Contact)").replace(" ", "").lower()
+    return expires == "0" or contact == "*" or re.search(r"expires=0(?!\d)", contact) is not None
 
 
 def reply(code, reason):
