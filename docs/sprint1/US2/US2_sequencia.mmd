@@ -1,0 +1,32 @@
+sequenceDiagram
+    autonumber off
+    participant M as Maria (UA Twinkle)<br/>sip:maria@172.20.0.2:5090
+    participant K as Kamailio (registrar)<br/>acme.operador
+
+    rect rgb(235, 244, 252)
+    Note over M,K: T1 – Registo (CSeq 595 · branch z9hG4bKnldmxbgq)
+    M->>K: F1 REGISTER sip:acme.operador<br/>Contact: #60;sip:maria@172.20.0.2:5090#62;#59;expires=3600
+    Note right of K: route_register: domínio acme (US1) ✓<br/>não é deregisto → registrar.save()<br/>usrloc: maria@acme.operador
+    K-->>M: F2 200 OK (resposta em 0,44 ms)
+    end
+
+    rect rgb(235, 248, 238)
+    Note over M,K: T2 – Refresh (CSeq 587 · branch z9hG4bKwgquxgit)
+    M->>K: F3 REGISTER sip:acme.operador<br/>Contact: ...#59;expires=3600
+    Note right of K: binding existente renovado (Expires = 3600 s)
+    K-->>M: F4 200 OK (0,39 ms)
+    end
+
+    rect rgb(252, 244, 232)
+    Note over M,K: T3 – Deregisto (CSeq 596 · branch z9hG4bKnxxkrqxo)
+    M->>K: F5 REGISTER sip:acme.operador<br/>Contact: ...#59;expires=0
+    Note right of K: is_deregister() = True<br/>registered_uri(maria@acme.operador) ✓<br/>registrar.save() remove o binding
+    K-->>M: F6 200 OK (0,43 ms)
+    end
+
+    rect rgb(251, 235, 235)
+    Note over M,K: T4 – Deregisto sem registo (CSeq 597 · branch z9hG4bKsutpijal)
+    M->>K: F7 REGISTER sip:acme.operador<br/>Contact: ...#59;expires=0
+    Note right of K: is_deregister() = True<br/>registered_uri(maria@acme.operador) ✗
+    K-->>M: F8 404 Not Found (0,32 ms)
+    end
